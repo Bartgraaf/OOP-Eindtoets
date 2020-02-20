@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--@author: Bart de Graaf- -->
+<!--@Learning line: Object oriented programming-->
+<!--@Date: 20-02-2020-->
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/8.0.241" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SettingsSelectController">
+    <children>
+      <VBox alignment="TOP_CENTER" layoutX="446.0" layoutY="72.0" prefHeight="158.0" prefWidth="172.0" spacing="10.0">
+         <children>
+            <Label text="Small Boy">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="smallplayer" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="NameColumn3" prefWidth="170.0" text="Name" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="231.0" layoutY="72.0" prefHeight="158.0" prefWidth="172.0" spacing="10.0">
+         <children>
+            <Label text="Players">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="player" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="NameColumn2" prefWidth="170.0" text="Name" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="72.0" prefHeight="158.0" prefWidth="172.0" spacing="10.0">
+         <children>
+            <Label text="Big Boy">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="bigplayer" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="NameColumn1" prefWidth="170.0" text="Name" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+        <VBox alignment="TOP_CENTER" layoutX="212.0" prefHeight="72.0" prefWidth="209.0" spacing="10.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="120.0" text="Select settings">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <Button layoutX="450.0" layoutY="364.0" mnemonicParsing="false" onAction="#nextScreenButtonPushed" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: #000;" text="Next step" textFill="WHITE" />
+      <Button fx:id="movetobigplayer" layoutX="231.0" layoutY="235.0" mnemonicParsing="false" onAction="#moveToBigPlayerButtonPushed" prefHeight="25.0" prefWidth="81.0" text="&lt; MOVE TO" />
+      <Button fx:id="movetosmallplayer" layoutX="322.0" layoutY="235.0" mnemonicParsing="false" onAction="#moveToSmallPlayerButtonPushed" prefHeight="25.0" prefWidth="81.0" text="MOVE TO &gt;" />
+      <Button fx:id="movetoplayer1" layoutX="14.0" layoutY="235.0" mnemonicParsing="false" onAction="#moveToPlayerButtonPushed1" prefHeight="25.0" prefWidth="172.0" text="MOVE TO &gt;" />
+      <Button fx:id="movetoplayer2" layoutX="446.0" layoutY="235.0" mnemonicParsing="false" onAction="#moveToPlayerButtonPushed2" prefHeight="25.0" prefWidth="172.0" text="&lt; MOVE TO" />
+      <TextField fx:id="singularName" layoutX="14.0" layoutY="310.0" prefHeight="25.0" prefWidth="172.0" promptText="For example: Push-up" />
+      <Label layoutX="14.0" layoutY="293.0" prefHeight="17.0" prefWidth="172.0" text="Punishment in the singular" />
+      <TextField fx:id="pluralName" layoutX="14.0" layoutY="364.0" prefHeight="25.0" prefWidth="172.0" promptText="For example: Push-ups" />
+      <Label layoutX="14.0" layoutY="347.0" prefHeight="17.0" prefWidth="172.0" text="Punishment in plural" />
+      <Label layoutX="447.0" layoutY="299.0" text="Amount of cards" />
+      <TextField fx:id="cardsAmount" layoutX="447.0" layoutY="316.0" prefHeight="25.0" prefWidth="172.0" promptText="Minimum: 2 - Maximum: 10" />
+    </children>
+</AnchorPane>

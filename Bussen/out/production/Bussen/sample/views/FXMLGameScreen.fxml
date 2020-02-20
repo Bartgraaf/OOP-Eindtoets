@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<!--@author: Bart de Graaf- -->
+<!--@Learning line: Object oriented programming-->
+<!--@Date: 20-02-2020-->
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="870.0"  xmlns="http://javafx.com/javafx/8.0.241" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.GameScreenController">
+    <children>
+        <VBox alignment="CENTER" layoutX="331.0" layoutY="8.0" prefHeight="72.0" prefWidth="209.0" spacing="10.0" AnchorPane.rightAnchor="330.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="58.0" prefWidth="120.0" text="Game Screen">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+      <Rectangle fx:id="card1" arcHeight="5.0" arcWidth="5.0" fill="#c90000" height="200.0" layoutX="213.0" layoutY="191.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+      <Label fx:id="topLabelCard1" layoutX="219.0" layoutY="193.0" prefHeight="58.0" prefWidth="102.0" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCard1" alignment="CENTER" contentDisplay="CENTER" layoutX="254.0" layoutY="284.0" prefHeight="17.0" prefWidth="32.0" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="bottomLabelCard1" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="225.0" layoutY="335.0" prefHeight="58.0" prefWidth="102.0" textAlignment="RIGHT" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="699.0" layoutY="24.0" mnemonicParsing="false" onAction="#higherButtonPushed" prefHeight="39.0" prefWidth="55.0" text="▲" />
+      <Button layoutX="699.0" layoutY="120.0" mnemonicParsing="false" onAction="#lowerButtonPushed" prefHeight="39.0" prefWidth="55.0" text="▼" />
+      <Button layoutX="762.0" layoutY="119.0" mnemonicParsing="false" onAction="#blackButtonPushed" prefHeight="39.0" prefWidth="55.0" text="BLACK" />
+      <Button layoutX="762.0" layoutY="24.0" mnemonicParsing="false" onAction="#redButtonPushed" prefHeight="39.0" prefWidth="55.0" text="RED" textFill="RED" />
+      <Button layoutX="699.0" layoutY="71.0" mnemonicParsing="false" onAction="#equalButtonPushed" prefHeight="39.0" prefWidth="55.0" text="⚫" />
+      <Rectangle fx:id="card2" arcHeight="5.0" arcWidth="5.0" fill="#c90000" height="200.0" layoutX="374.0" layoutY="193.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+      <Label fx:id="topLabelCard2" layoutX="380.0" layoutY="195.0" prefHeight="58.0" prefWidth="102.0" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCard2" alignment="CENTER" contentDisplay="CENTER" layoutX="415.0" layoutY="286.0" prefHeight="17.0" prefWidth="32.0" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="bottomLabelCard2" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="386.0" layoutY="337.0" prefHeight="58.0" prefWidth="102.0" textAlignment="RIGHT" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="card3" arcHeight="5.0" arcWidth="5.0" fill="#c90000" height="200.0" layoutX="539.0" layoutY="195.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+      <Label fx:id="topLabelCard3" layoutX="545.0" layoutY="197.0" prefHeight="58.0" prefWidth="102.0" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCard3" alignment="CENTER" contentDisplay="CENTER" layoutX="580.0" layoutY="288.0" prefHeight="17.0" prefWidth="32.0" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="bottomLabelCard3" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="551.0" layoutY="339.0" prefHeight="58.0" prefWidth="102.0" textAlignment="RIGHT" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="card4" arcHeight="5.0" arcWidth="5.0" fill="#c90000" height="200.0" layoutX="698.0" layoutY="194.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+      <Label fx:id="topLabelCard4" layoutX="704.0" layoutY="196.0" prefHeight="58.0" prefWidth="102.0" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCard4" alignment="CENTER" contentDisplay="CENTER" layoutX="739.0" layoutY="287.0" prefHeight="17.0" prefWidth="32.0" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="bottomLabelCard4" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="710.0" layoutY="338.0" prefHeight="58.0" prefWidth="102.0" textAlignment="RIGHT" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="card5" arcHeight="5.0" arcWidth="5.0" fill="#c90000" height="200.0" layoutX="44.0" layoutY="411.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+      <Label fx:id="topLabelCard5" layoutX="50.0" layoutY="413.0" prefHeight="58.0" prefWidth="102.0" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCard5" alignment="CENTER" contentDisplay="CENTER" layoutX="85.0" layoutY="504.0" prefHeight="17.0" prefWidth="32.0" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="bottomLabelCard5" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="56.0" layoutY="555.0" prefHeight="58.0" prefWidth="102.0" textAlignment="RIGHT" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="card6" arcHeight="5.0" arcWidth="5.0" fill="#c90000" height="200.0" layoutX="214.0" layoutY="412.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+      <Label fx:id="topLabelCard6" layoutX="220.0" layoutY="414.0" prefHeight="58.0" prefWidth="102.0" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCard6" alignment="CENTER" contentDisplay="CENTER" layoutX="255.0" layoutY="505.0" prefHeight="17.0" prefWidth="32.0" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="bottomLabelCard6" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="226.0" layoutY="556.0" prefHeight="58.0" prefWidth="102.0" textAlignment="RIGHT" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="card7" arcHeight="5.0" arcWidth="5.0" fill="#c90000" height="200.0" layoutX="379.0" layoutY="413.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+      <Label fx:id="topLabelCard7" layoutX="385.0" layoutY="415.0" prefHeight="58.0" prefWidth="102.0" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCard7" alignment="CENTER" contentDisplay="CENTER" layoutX="420.0" layoutY="506.0" prefHeight="17.0" prefWidth="32.0" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="bottomLabelCard7" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="391.0" layoutY="557.0" prefHeight="58.0" prefWidth="102.0" textAlignment="RIGHT" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="card8" arcHeight="5.0" arcWidth="5.0" fill="#c90000" height="200.0" layoutX="540.0" layoutY="412.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+      <Label fx:id="topLabelCard8" layoutX="546.0" layoutY="414.0" prefHeight="58.0" prefWidth="102.0" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCard8" alignment="CENTER" contentDisplay="CENTER" layoutX="581.0" layoutY="505.0" prefHeight="17.0" prefWidth="32.0" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="bottomLabelCard8" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="552.0" layoutY="556.0" prefHeight="58.0" prefWidth="102.0" textAlignment="RIGHT" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="card9" arcHeight="5.0" arcWidth="5.0" fill="#c90000" height="200.0" layoutX="699.0" layoutY="412.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+      <Label fx:id="topLabelCard9" layoutX="705.0" layoutY="414.0" prefHeight="58.0" prefWidth="102.0" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCard9" alignment="CENTER" contentDisplay="CENTER" layoutX="740.0" layoutY="505.0" prefHeight="17.0" prefWidth="32.0" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="bottomLabelCard9" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="711.0" layoutY="556.0" prefHeight="58.0" prefWidth="102.0" textAlignment="RIGHT" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="card0" arcHeight="5.0" arcWidth="5.0" fill="#c90000" height="200.0" layoutX="44.0" layoutY="190.0" stroke="#00e440" strokeType="INSIDE" strokeWidth="4.0" width="120.0" />
+      <Label fx:id="labelCard0" alignment="CENTER" contentDisplay="CENTER" layoutX="85.0" layoutY="283.0" prefHeight="17.0" prefWidth="32.0" textAlignment="CENTER" />
+      <Label fx:id="bottomLabelCard0" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="56.0" layoutY="334.0" prefHeight="58.0" prefWidth="102.0" textAlignment="RIGHT">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="topLabelCard0" layoutX="50.0" layoutY="192.0" prefHeight="31.0" prefWidth="19.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="topLabelCard01" layoutX="50.0" layoutY="197.0" prefHeight="58.0" prefWidth="102.0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="setLabelAsNeeded" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="310.0" layoutY="87.0" prefHeight="72.0" prefWidth="331.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="14.0" prefHeight="72.0" prefWidth="283.0" text="It is the following person's turn:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="personLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="44.0" prefHeight="72.0" prefWidth="283.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
